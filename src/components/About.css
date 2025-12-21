@@ -1,0 +1,129 @@
+.about-section {
+  padding: 100px 10%;
+  background: linear-gradient(180deg, #020617, #020b1f);
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 60px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 60px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 234, 255, 0.12);
+  box-shadow: 0 0 60px rgba(0, 234, 255, 0.08);
+}
+
+/* Titles */
+.section-title {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #00eaff;
+}
+
+/* LEFT */
+.about-intro {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.about-intro span {
+  color: #00eaff;
+  font-weight: 600;
+}
+
+.about-education h3,
+.about-focus h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-education p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #00eaff;
+  font-weight: 600;
+}
+
+.about-focus ul {
+  padding-left: 18px;
+  color: #cbd5e1;
+}
+
+.about-focus li {
+  margin-bottom: 8px;
+}
+
+/* RIGHT */
+.about-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-card {
+  background: rgba(0, 234, 255, 0.06);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(0, 234, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(0, 234, 255, 0.25);
+}
+
+.about-card h2 {
+  color: #00eaff;
+  font-size: 34px;
+}
+
+.about-card p {
+  color: #cbd5e1;
+}
+
+/* Mission */
+.about-mission {
+  grid-column: span 2;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 18px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  color: #cbd5e1;
+}
+
+.about-mission svg {
+  font-size: 26px;
+  color: #00eaff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .about-right {
+    grid-template-columns: 1fr;
+  }
+
+  .about-mission {
+    grid-column: span 1;
+  }
+}
