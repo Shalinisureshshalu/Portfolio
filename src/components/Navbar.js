@@ -1,24 +1,30 @@
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { Box } from '@mui/material';
+import React from "react";
+import "./Navbar.css";
 
-function Navbar() {
+const Navbar = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <AppBar position="static" color="primary">
-      <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          Shalini Suresh
-        </Typography>
+    <nav className="navbar">
+      {/* LEFT - NAME */}
+      <div className="navbar-name">
+      Shalini Suresh
+      </div>
 
-        <Button color="inherit">About</Button>
-        <Button color="inherit">Skills</Button>
-        <Button color="inherit">Projects</Button>
-        <Button color="inherit">Contact</Button>
-      </Toolbar>
-    </AppBar>
+      {/* RIGHT - NAV LINKS */}
+      <ul className="navbar-links">
+        <li onClick={() => scrollToSection("about")}>About</li>
+        <li onClick={() => scrollToSection("skills")}>Skills</li>
+        <li onClick={() => scrollToSection("projects")}>Projects</li>
+        <li onClick={() => scrollToSection("contact")}>Contact</li>
+      </ul>
+    </nav>
   );
-}
+};
 
 export default Navbar;

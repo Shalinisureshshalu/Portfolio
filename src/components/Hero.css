@@ -7,6 +7,11 @@
   padding: 0 7%;
 }
 
+.section {
+  padding-top: 100px;
+}
+
+
 .hero-container {
   max-width: 1250px;
   width: 100%;
@@ -18,11 +23,11 @@
 
 /* TEXT */
 .hero-intro {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 500;
   color: #9aa4ff;
   letter-spacing: 1px;
-  margin-bottom: 12px;
+  margin-bottom: -45px;
 }
 
 .hero-name {
@@ -40,6 +45,13 @@
 
 .hero-role span {
   color: #00eaff;
+}
+
+.hero-specialization {
+  font-size: 1.5rem;
+  margin-top: -2px;
+  color: #7de7ff;
+  letter-spacing: 0.5px;
 }
 
 .hero-desc {
@@ -82,12 +94,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px; /* pushes image slightly down like reference */
+  margin-top: -13px; /* pushes image slightly down like reference */
 }
 
 .hero-image img {
-  width: 340px;
-  height: 340px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
   object-fit: cover;
   border: 7px solid #00eaff;
@@ -109,6 +121,8 @@
 
   .hero-buttons {
     justify-content: center;
+    margin-top: 30px;
+
   }
 
   .hero-image {

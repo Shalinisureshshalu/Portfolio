@@ -39,6 +39,7 @@ const skills = [
 
 const Skills = () => {
   return (
+    <section id="skills" className="skills">
     <div className="skills-section">
       <h2>Skills & Tools</h2>
       
@@ -55,6 +56,7 @@ const Skills = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

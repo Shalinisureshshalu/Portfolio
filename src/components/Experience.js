@@ -17,7 +17,7 @@ const Experience = () => {
             <FaBriefcase />
           </div>
           <div className="experience-content">
-            <h3>Web Development Intern</h3>
+            <h3>Web Development & DevOps Intern</h3>
             <h4>Twilight IT Solutions, Puducherry</h4>
             <p className="duration">Internship</p>
             <p className="description">

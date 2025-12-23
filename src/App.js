@@ -12,14 +12,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-
-      <Routes>
-        {/* HOME PAGE */}
-        <Route
-          path="/"
-          element={
+    
             <>
               <Hero />
               <About />
@@ -30,14 +23,6 @@ function App() {
               <Experience />
               <Contact />
             </>
-          }
-        />
-
-        {/* INDIVIDUAL PAGES */}
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
   );
 }
 

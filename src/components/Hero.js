@@ -1,23 +1,32 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 import profile from "../assets/profile/profile.jpg";
-
+import Navbar from "./Navbar";
 const Hero = () => {
-  const navigate = useNavigate();
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="hero">
+      <Navbar />
       <div className="hero-container">
 
         {/* LEFT CONTENT */}
+
         <div className="hero-text">
           <p className="hero-intro">Hello, I’m</p>
           <h1 className="hero-name">Shalini Suresh</h1>
 
           <h2 className="hero-role">
-            Full Stack Developer &  <span>AI/ML Engineer</span>
+            Full Stack Developer &  <span> AI Engineer</span>
           </h2>
+
+            <p className="hero-specialization">
+              Cyber Security Enthusiast.
+            </p>
 
           <p className="hero-desc">
             B.Tech CSE (Honours in Cyber Security) with a strong passion for
@@ -29,14 +38,14 @@ const Hero = () => {
           <div className="hero-buttons">
             <button
               className="btn-primary"
-              onClick={() => navigate("/contact")}
+              onClick={() =>  scrollToSection("contact")}
             >
               Hire Me
             </button>
 
             <button
               className="btn-outline"
-              onClick={() => navigate("/projects")}
+              onClick={() => scrollToSection("projects")}
             >
               View Work
             </button>

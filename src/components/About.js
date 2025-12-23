@@ -4,6 +4,7 @@ import { FaGraduationCap, FaShieldAlt, FaLaptopCode } from "react-icons/fa";
 
 const About = () => {
   return (
+    <section id="about" className="section">
     <section className="about-section" id="about">
       <div className="about-wrapper">
 
@@ -76,6 +77,7 @@ const About = () => {
         </div>
 
       </div>
+    </section>
     </section>
   );
 };

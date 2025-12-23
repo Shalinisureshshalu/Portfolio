@@ -12,7 +12,7 @@ const projects = [
     description:
       "An AI-powered system that detects crop diseases using deep learning and image processing techniques, helping farmers with early and accurate diagnosis.",
     tags: ["Python", "CNN", "Deep Learning", "Image Processing", "React", "Firebase"],
-    github: "https://github.com/shalinisuresh/Crop_Disease_Detection",
+    github: "https://github.com/Shalinisureshshalu/Crop-Disease-Detection",
     image: cropImg,
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description:
       "A full-stack e-commerce platform with product listing, shopping cart, and authentication, built with modern web technologies.",
     tags: ["React", "Material UI", "Firebase", "CSS"],
-    github: "https://github.com/shalinisuresh/Tech-Trove",
+    github: "https://github.com/Shalinisureshshalu/E-commerce-TechTrove",
     image: techTroveImg,
   },
 ];

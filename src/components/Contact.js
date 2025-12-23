@@ -4,6 +4,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
+    <section id="contact" className="section">
     <section className="contact-section" id="contact">
       <h2 className="contact-title">
         Get In <span>Touch</span>
@@ -62,7 +63,9 @@ const Contact = () => {
 
       </div>
     </section>
+    </section>
   );
 };
+
 
 export default Contact;
